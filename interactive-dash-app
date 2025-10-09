@@ -1,0 +1,19 @@
+# Interactive Data Visualization Dashboard
+
+This project presents an interactive dashboard built with **Dash**, **Plotly**, and **Pandas** for visual data analysis.  
+It demonstrates dynamic charting, filtering, and in-notebook visualization suitable for analytics and presentation purposes.
+
+## 📘 Overview
+The dashboard allows users to explore datasets interactively through responsive plots and layout components.  
+It’s designed as a lightweight, modular application that can be adapted for any dataset.
+
+## 🧠 Developer
+**Jahan**  
+University of Connecticut – School of Computing  
+Fall 2025
+
+## ⚙️ How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/data-visualization-projects.git
+   cd data-visualization-projects/interactive-dash-app
