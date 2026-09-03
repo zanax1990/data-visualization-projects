@@ -1,19 +1,20 @@
-# 🌋 Volcano Plot of Differential Protein Expression
+# Volcano Plot of Differential Protein Expression
 
-This Python script generates a volcano plot visualizing the statistical significance and fold change of protein expression between WT and JR groups.
+`volcano_plot.py` plots log2 fold change against `-log10(p-value)` and colors points using configurable p-value and fold-change thresholds.
 
-## 📊 What It Does
-- Loads the full differential expression results
-- Calculates `-log10(p-value)` for visualization
-- Highlights significant proteins based on `p-value` and `log2FC` thresholds
-- Draws a volcano plot with color-coded points for different significance levels
+## Expected input
 
-## 📦 Requirements
-- Python 3.9+
-- pandas
-- matplotlib
-- numpy
+The script currently reads `Differential_results .csv` from the working directory. The table must contain:
 
-## 🚀 Usage
+- `p_value`
+- `log2FC`
+
+## Run
+
+From the repository root:
+
 ```bash
-python volcano_plot.py
+python volcano-plot/volcano_plot.py
+```
+
+The dataset is not included. The default thresholds are `p < 0.05` and `|log2FC| > 1`.
