@@ -11,10 +11,11 @@ The script currently reads `Differential_results .csv` from the working director
 
 ## Run
 
-From the repository root:
+From the project directory:
 
 ```bash
-python volcano-plot/volcano_plot.py
+cd volcano-plot
+python volcano_plot.py
 ```
 
 The dataset is not included. The default thresholds are `p < 0.05` and `|log2FC| > 1`.

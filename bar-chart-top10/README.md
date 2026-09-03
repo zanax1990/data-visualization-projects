@@ -13,10 +13,11 @@ Place `Significant_Proteins_p0.05.csv` in this directory. The script expects:
 
 ## Run
 
-From the repository root:
+From the project directory:
 
 ```bash
-python bar-chart-top10/bar_chart.py
+cd bar-chart-top10
+python bar_chart.py
 ```
 
 The dataset is not included. The script displays the chart interactively and does not save an output file.
