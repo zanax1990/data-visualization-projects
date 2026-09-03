@@ -1,17 +1,23 @@
-# 🧬 Top 10 Differentially Expressed Proteins Bar Chart
+# Top Differentially Expressed Proteins
 
-This Python script generates a bar chart comparing the mean expression levels of the top 10 most significant proteins between WT and JR groups.
+`bar_chart.py` compares mean expression values for the ten proteins with the smallest p-values in a supplied results table.
 
-## 📊 What It Does
-- Loads a filtered dataset with proteins where `p < 0.05`
-- Sorts proteins by significance and selects the top 10
-- Plots mean expression levels of WT and JR side-by-side for comparison
+## Expected input
 
-## 📦 Requirements
-- Python 3.9+
-- pandas
-- matplotlib
+Place `Significant_Proteins_p0.05.csv` in this directory. The script expects:
 
-## 🚀 Usage
+- `p_value`
+- `mean_WT`
+- `mean_JR`
+- `ProteinName`
+
+## Run
+
+From the project directory:
+
 ```bash
+cd bar-chart-top10
 python bar_chart.py
+```
+
+The dataset is not included. The script displays the chart interactively and does not save an output file.

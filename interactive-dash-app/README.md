@@ -1,23 +1,20 @@
-# Interactive Data Visualization Dashboard
+# Interactive KDE Dashboard
 
-This project presents an interactive dashboard built with **Dash**, **Plotly**, and **Pandas** for visual data analysis.
-It demonstrates dynamic charting, filtering, and in-notebook visualization suitable for analytics and presentation purposes.
+This notebook explores the distribution of daily COVID-19 cases. It compares kernel density estimates across bandwidths and kernels, applies a log10 transformation, compares selected countries, and builds a small Dash interface for U.S. case data.
 
-## Overview
-The dashboard lets users explore datasets interactively through responsive plots and layout components.
-It is a lightweight, modular app that you can adapt to different datasets.
+## Input
 
-## Developer
-**Jahanbakhsh Ghasemi**
-University of Connecticut – School of Computing
+The notebook expects `/content/Covid19-data.csv` and uses these columns:
 
-## How to Run
-1. Clone this repo:
-   git clone https://github.com/zanax1990/data-visualization-projects.git
-   cd data-visualization-projects/interactive-dash-app
+- `location`
+- `new_cases`
 
-2. Install:
-   pip install -r requirements.txt
+The dataset is not included.
 
-3. Run:
-   jupyter notebook CSE5520_HW6_GhasemiJahanbakhsh.ipynb
+## Run
+
+```bash
+jupyter notebook interactive-dash-app/interactive-dash-app.ipynb
+```
+
+To run outside Colab, change the input path in the first cell. The notebook contains executed outputs from the original run.
